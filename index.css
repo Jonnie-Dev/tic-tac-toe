@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #f2c14e;
+    --win: #2d414b;
+}
+
+body {
+    color: var(--orange);
+    font-family: 'Finger paint', cursive;
+}
+
+h1 {
+    font-size: 54px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #37505C;
+}
+
+.gameboard {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 54px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    transition: all 400ms ease-in;
+}
+
+.square:nth-child(3n) {
+    border-right: none;
+}
+
+.square:nth-child(6) ~ .square {
+    border-bottom: none;
+} 
+
+.square:hover {
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: #333;
+    border-color: var(--orange);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+
+/* .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+    max-width: 25rem;
+    margin: 2rem auto;
+    
+    outline: 1px solid white;
+    outline-offset: -1px;
+} */
+
+/* .square {
+    border: 1px solid;
+    
+    font-size: 2em;
+    display: flex;
+    
+    justify-content: center;
+ 
+    padding: 1rem;
+    
+    cursor: pointer;
+} */
+
+
