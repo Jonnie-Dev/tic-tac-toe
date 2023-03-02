@@ -22,6 +22,12 @@ h1 {
     text-transform: uppercase;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
 .container {
     padding: 40px;
     height: 100vh;
@@ -73,17 +79,12 @@ button {
     font-size: 18px;
     transition: 200ms transform;
     font-weight: 600;
+    transition: all 200ms ease-in-out;
 }
 
 button:hover {
     cursor: pointer;
     transform: translateY(-2px);
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    font: inherit;
 }
 
 .copyright {
