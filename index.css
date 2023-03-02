@@ -15,8 +15,10 @@ body {
 }
 
 h1 {
-    font-size: 54px;
-    margin-bottom: 2rem;
+    /* font-size: 54px; */
+    font-size: 2rem;
+    font-size: clamp(2rem, 1.5217391304347827rem + 2.391304347826087vw, 3.375rem);
+    margin-bottom: 1.75rem;
     text-transform: uppercase;
 }
 
@@ -78,30 +80,12 @@ button:hover {
     transform: translateY(-2px);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
 
-/* .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    
-    max-width: 25rem;
-    margin: 2rem auto;
-    
-    outline: 1px solid white;
-    outline-offset: -1px;
-} */
-
-/* .square {
-    border: 1px solid;
-    
-    font-size: 2em;
-    display: flex;
-    
-    justify-content: center;
- 
-    padding: 1rem;
-    
-    cursor: pointer;
-} */
-
-
+.copyright {
+    margin-top: 2rem;
+}
